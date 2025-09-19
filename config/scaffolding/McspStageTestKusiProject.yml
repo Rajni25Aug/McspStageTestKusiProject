@@ -32,6 +32,12 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 - name: SIQACloudStreamsTests
+  version: "1.0"
+  gitServerName: kusi
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Rajni25Aug
+  gitBranch: main
+- name: DADA_GlobalVariable1
   gitServerName: kusi
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: Rajni25Aug
@@ -44,6 +50,8 @@ services:
   - name: JMS2waySSL
     version: "1.0"
   - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: JMSTest
     version: "1.0"
