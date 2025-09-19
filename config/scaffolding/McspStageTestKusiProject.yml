@@ -8,6 +8,12 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 - name: SSL_JDBC_Test
+  version: "1.0"
+  gitServerName: kusi
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: Rajni25Aug
+  gitBranch: main
+- name: JMS2waySSL
   gitServerName: kusi
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Rajni25Aug
