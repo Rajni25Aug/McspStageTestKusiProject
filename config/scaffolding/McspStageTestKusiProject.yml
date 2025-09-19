@@ -26,6 +26,12 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 - name: SIQAJDBCAdapterTests
+  version: "1.0"
+  gitServerName: kusi
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Rajni25Aug
+  gitBranch: main
+- name: SIQACloudStreamsTests
   gitServerName: kusi
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: Rajni25Aug
@@ -47,6 +53,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: jms2wayssl_publisher:jms2wayssl_publisher
   packages:
   - name: JMS2waySSL
