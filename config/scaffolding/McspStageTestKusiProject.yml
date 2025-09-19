@@ -38,11 +38,146 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
   gitServerName: kusi
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: Rajni25Aug
   gitBranch: main
 services:
+- serviceName: project.mcspstagetestkusi.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:SalesForceAlias
+  packages:
+  - name: McspStageTestKusiProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.mcspstagetestkusi.integrations:SalesforceTest
+  packages:
+  - name: McspStageTestKusiProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.mcspstagetestkusi.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:Salesforce
+  packages:
+  - name: McspStageTestKusiProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.mcspstagetestkusi.integrations:Sum
+  packages:
+  - name: McspStageTestKusiProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2091
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2091
+- serviceName: project.mcspstagetestkusi.integrations:deepclonetest
+  packages:
+  - name: McspStageTestKusiProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.string:stringToBytes
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2091
+- serviceName: pub.utils:deepClone
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2091
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2091
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2091
 - serviceName: project.mcspstagetestkusi.integrations:testjmsTest
   packages:
   - name: McspStageTestKusiProject
@@ -85,3 +220,86 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+configurationVariables:
+  ? iscloudstreamsconnectorservice.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:Salesforce.connectionAlias
+  : project.mcspstagetestkusi.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:SalesForceAlias
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.connectTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth_v20.scope
+  : offline_access api refresh_token
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth_v20.accessTokenRefreshURLRequest
+  : URL Query String
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth_v20.authenticationServerUrl
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth_v20.authorizationHeaderInTokenRefresh
+  : "false"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth_v20.authorizationHeaderPrefix
+  : Bearer
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth_v20.authorizationServerUrl
+  : https://login.salesforce.com/services/oauth2/authorize
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cx.grant_type
+  : refresh_token
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.sockBuffSize
+  : "8192"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth_v20.refreshToken
+  : "{AES}z0OyKRGMCuSrw5+VwAKX9/oM6BIKjPeYnDaBN96E5WE51ihADTbuVPxNgEzibj4QZ+EkdVmuzavsuGo7cSFFyYqssvQYfu051UABuvfGck7t1OSEZFCXaC8TXIG3+XjN"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.keepAliveInterval
+  : "300000"
+  ? iscloudstreamsconnectorservice.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:Salesforce.virtualServiceName
+  : WmCloudStreams.RestVS
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.poolable
+  : "true"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.providerUrl
+  : https://sag53-dev-ed.develop.my.salesforce.com
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth_v20.refreshAccessToken
+  : "true"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth.consumerId
+  : 3MVG9k02hQhyUgQCKlnwOVc1lTfY9AqPHmUIRA6I.ZqYzln.F3Vuok.Rk6d6F00IhbOJxstGzhIJDyuJGd0ft
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth.accessToken
+  : "{AES}h1r1CmTvU65r25EqPgWKVZ1H4SVi8fLUMRsM252W94tYDyENWtPuXlPanrg202RunIdUJkwJka2OOL6zobprr2PM+IBaucjh9o2qAhaQI4+kNcf0VMa2XH4oPO9N/8Cyw0fWBYceZjYwUE6qTQsq0GmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.retryCount
+  : "4"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth_v20.accessTokenRefreshURL
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.readTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.timeoutType
+  : auto
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..mcspstagetestkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesForceAlias.oauth.consumerSecret
+  : "{AES}ePv9vDKXdd6A2HDsPDBAO8y1Fe9R7m6Dya5xSCLlAK353vKmgg/uiZT0YAoUU42Eojf9A5EvRE+pSL3aLrpBNWmK1wuN3U1rA1B0VhuZoUw="
