@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">KumariRajni.Singh@ibm.com</value>
-    <value name="createdDate">1758259077295</value>
-    <value name="lastModifiedDate">1758259077295</value>
+    <value name="lastModifiedBy">KumariRajni.Singh@ibm.com</value>
+    <value name="lastModifiedDate">1758259175453</value>
     <value name="displayName">testjmsTest</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -71,6 +70,44 @@
         <value name="nodePathNew">0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">JMSTest</value>
+          <value name="groupName">JMSTest;1.0</value>
+          <null name="services"/>
+        </record>
+        <Boolean name="isProjectPackage">false</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">publisher:publisher</value>
+          <value name="serviceName">publisher:publisher</value>
+          <value name="displayName">publisher</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
+      </record>
+      <record name="/2" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">SSL_JDBC_Test</value>
+          <value name="groupName">SSL_JDBC_Test;1.0</value>
+          <null name="services"/>
+        </record>
+        <Boolean name="isProjectPackage">false</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">SSL_JDBC_Test.services:get_ssl</value>
+          <value name="serviceName">SSL_JDBC_Test.services:get_ssl</value>
+          <value name="displayName">get_ssl</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
       </record>
     </record>
   </record>
